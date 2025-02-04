@@ -14,12 +14,22 @@ main {
 button {
   display: flex;
   background-color: cadetblue;
-  padding: 1.3em;
+  padding: 10em;
   margin: auto auto;
   border: 1px solid cadetblue;
   justify-content: center; /* centers horizontally */
   align-items: center; /* centers vertically */
   border-radius: 5px;
+}
+
+button.Edit-Profile {
+  display: flex;
+  background-color: cadetblue;
+  padding: 1.2em;
+  margin: auto auto;
+  border: 1px solid cadetblue;
+  align-items: left;
+  
 }
 
 button:hover {
@@ -28,9 +38,9 @@ button:hover {
 
 .flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
-  border: 1px solid red;
+  
 }
 
 img {
@@ -41,11 +51,19 @@ img {
   margin: 15px;
 }
 
+img.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  margin-bottom: 10px;
+}
+
 .grid-containter {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .grid-item {
@@ -114,6 +132,7 @@ img {
   background-color: #f9f9f9f9;
   border: 1px solid #b40606;
   padding: 20px;
+  text-align: center;
 }
 
 .footer {
@@ -123,3 +142,5 @@ img {
   padding: 15px;
   text-align: center;
 }
+
+
